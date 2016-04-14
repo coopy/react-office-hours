@@ -59,6 +59,7 @@ const BikeChart = React.createClass({
 
     return (
       <div>
+
         <VictoryChart
           animate={{velocity: 0.02}}
           height={chartHeight}
@@ -71,9 +72,11 @@ const BikeChart = React.createClass({
             right: 30,
             left: 50
           }}>
+
           <VictoryLabel style={{stroke: "blue"}} x={chartWidth - 100} y={10}>
             Northbound
           </VictoryLabel>
+
           <VictoryLabel style={{stroke: "green"}} x={chartWidth - 100} y={25}>
             Southbound
           </VictoryLabel>
@@ -111,6 +114,7 @@ const BikeChart = React.createClass({
             data={this.state.data.southBound}/>
 
         </VictoryChart>
+
       </div>
     );
   }

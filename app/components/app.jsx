@@ -34,6 +34,7 @@ const App = React.createClass({
       <div style={{
         font: '12px sans-serif'
       }}>
+
         <h1>Fremont Bicycle Traffic</h1>
 
         <label>
@@ -54,9 +55,11 @@ const App = React.createClass({
         </label>
 
         <section style={{paddingTop: '50px'}}>
+
           <BikeChart
             fromDate={this.state.fromDate}
             toDate={moment(this.state.fromDate).add(this.state.numDays, 'days')} />
+
         </section>
 
       </div>
